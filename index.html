@@ -4,16 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>goit-js-hw-11</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-c9db6b34.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-8c59ed88.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-1cd1f9d9.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-88be9a36.css">
   </head>
   <body>
- 
-
-    
-    
+    <section>
+      <form class="js-search-form">
+        <input
+          type="text"
+          name="seachImage"
+          class="search-input"
+          autocomplete="off"
+          placeholder="Seach images"
+          required
+        />
+        <button class="search-button">Search</button>
+      </form>
+      <p class="loader">Loading images, please wait...</p>
+    </section>
+    <ul class="js-list search-cards"></ul>
     
   </body>
 </html>
